@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alumni Association - Home</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
+  
 </head>
 <body>
 
@@ -60,24 +60,32 @@
             <div class="EventImage"><img src="https://www.pngall.com/wp-content/uploads/15/Donation-PNG-Cutout.png" alt=""></div>
             <div class="EventButton"><p>Donation Portal</p></div>
             <div class="EventInfo">
-                <p>Donation Portal</p>
-                <p>
-                    The Donation Portal enables alumni to easily contribute funds, supporting college initiatives, scholarships, and projects that enhance student experiences and growth.</p>
+                <div><p>Donation Portal</p></div>
+                <div><p></p>
+                    The Donation Portal enables alumni to easily contribute funds, supporting college initiatives, scholarships, and projects that enhance student experiences and growth.</p></div>
             </div>
         </div>
   </section>
 
   <!-- Success Story Carousel -->
-  <!-- <section class="carousel">
+  <section class="carousel" id="carousel-container" aria-label="Alumni Success Stories Carousel">
     <h2>Alumni Success Stories</h2>
     <div class="carousel-content">
-      <div class="slide">Success Story 1</div>
-      <div class="slide">Success Story 2</div>
-      <div class="slide">Success Story 3</div>
+        <div class="slide"><img src="https://img.freepik.com/free-photo/happy-student-with-graduation-hat-diploma-grey_231208-12981.jpg?w=996&t=st=1726941928~exp=1726942528~hmac=bfcc61b00e05ea336ce79d87a08a783905d2bf9349d14a708cf89fd7b749f240" alt="Alumni Success 1"></div>
+        <div class="slide"><img src="https://img.freepik.com/free-photo/idea-brainstorm-creative-planning-success-concept_53876-64983.jpg?w=826&t=st=1726942603~exp=1726943203~hmac=2ea09d00916b1063b2cfb531c35b7e8e61ea9bcf6f0c358d52a375c58e70503a"></div>
+        
     </div>
-    <button id="prev">Previous</button>
-    <button id="next">Next</button>
-  </section> -->
+    <div class="carousel-controls">
+        <button id="prev" aria-label="Previous Slide">Previous</button>
+        <button id="next" aria-label="Next Slide">Next</button>
+    </div>
+    <div class="carousel-indicators">
+        <span class="indicator" data-slide="0"></span>
+        <span class="indicator" data-slide="1"></span>
+        
+    </div>
+</section>
+
 
   <!-- Upcoming Events -->
   <!-- <section class="events">
@@ -93,6 +101,37 @@
       <a href="#" class="btn">Learn More</a>
     </div>
   </section> --> 
+  <footer>
+    <div class="footer-content">
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#success-stories">Success Stories</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p>Email: <a href="mailto:info@alumniassociation.com">info@alumniassociation.com</a></p>
+            <p>Phone: +91 9999999999</p>
+            <p>Address: GIET,Rajahmundry</p>
+        </div>
+        <div class="footer-social">
+            <h3>Follow Us</h3>
+            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Alumni Association. All rights reserved.</p>
+    </div>
+</footer>
 
+  <script src="script.js" defer></script>
 </body>
 </html>

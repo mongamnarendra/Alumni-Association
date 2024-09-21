@@ -1,27 +1,32 @@
-// JavaScript for the Success Story Carousel
+document.addEventListener('DOMContentLoaded', () => {
+    let currentSlide = 0;  
+    const slides = document.querySelectorAll('.slide');  
+    const totalSlides = slides.length;  
 
-let currentSlide = 0;  // Keep track of the current slide
-const slides = document.querySelectorAll('.slide');  // Select all slides
-const totalSlides = slides.length;  // Get the total number of slides
+    function updateCarousel() {
+        slides.forEach((slide, index) => {
+            slide.style.transform = `translateX(${(index - currentSlide) * 100}%)`;
+        });
+        updateIndicators(); // Update indicators on slide change
+    }
 
-// Function to update the carousel based on the current slide index
-function updateCarousel() {
-  slides.forEach((slide, index) => {
-    slide.style.transform = `translateX(${(index - currentSlide) * 100}%)`;
-  });
-}
+    function updateIndicators() {
+        const indicators = document.querySelectorAll('.indicator');
+        indicators.forEach((indicator, index) => {
+            indicator.classList.toggle('active', index === currentSlide);
+        });
+    }
 
-// Initialize the carousel on load
-updateCarousel();
+    document.getElementById('next').addEventListener('click', () => {
+        currentSlide = (currentSlide + 1) % totalSlides;  
+        updateCarousel();
+    });
 
-// Event listener for the "Next" button
-document.getElementById('next').addEventListener('click', () => {
-  currentSlide = (currentSlide + 1) % totalSlides;  // Move to the next slide, loop back to the start if it's the last slide
-  updateCarousel();
-});
+    document.getElementById('prev').addEventListener('click', () => {
+        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;  
+        updateCarousel();
+    });
 
-// Event listener for the "Previous" button (if you add one)
-document.getElementById('prev').addEventListener('click', () => {
-  currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;  // Move to the previous slide, loop back to the end if it's the first slide
-  updateCarousel();
+    // Start the carousel
+    updateCarousel();
 });
