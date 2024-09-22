@@ -49,11 +49,33 @@ nav ul {
     display: flex;
     gap: 15px;
 }
-
 nav ul li a {
     color: white;
     font-size: 16px;
+    position: relative;
 }
+
+nav ul li a:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 2px;
+    background-color: #FFA500;
+    animation: slider 0.5s;
+
+}
+
+@keyframes slider {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+    
+}
+
 
 
 
