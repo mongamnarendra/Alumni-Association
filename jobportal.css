@@ -70,7 +70,7 @@ nav ul li a {
 
 
 .hero {
-    background-color: #ff9900;
+    background-color: #ff8c00;  /* Vibrant orange */
     padding: 80px 20px;
     text-align: center;
     color: white;
@@ -112,13 +112,13 @@ nav ul li a {
   /* Job Listings Section */
   .job-listings {
     padding: 40px 20px;
-    background-color: #fff;
+    background-color: #1f1f1f;  /* Slightly lighter dark background */
     text-align: center;
   }
   
   .job-listings h2 {
     margin-bottom: 40px;
-    color: #333;
+    color: #ff8c00;  /* Orange heading */
   }
   
   .job-card {
@@ -140,7 +140,7 @@ nav ul li a {
   
   .job-card .btn {
     padding: 10px 20px;
-    background-color: #ff9900;
+    background-color: #ff8c00;  /* Orange button */
     color: #333;
     border: none;
     border-radius: 5px;
@@ -150,7 +150,7 @@ nav ul li a {
   /* Post a Job Section */
   .post-job {
     padding: 40px 20px;
-    background-color: #ff9900;
+    background-color: #ff8c00;  /* Orange background */
     text-align: center;
     color: white;
   }
@@ -167,6 +167,14 @@ nav ul li a {
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
+  }
+  
+  /* Footer */
+  footer {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
   }
   
   /* Footer */
