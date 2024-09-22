@@ -198,7 +198,10 @@ nav ul li a:hover::after {
   .image {
     width: 400px;
     height: 400px;
-    
+    background-image: url(https://png.pngtree.com/png-clipart/20230825/original/pngtree-legal-advice-on-divorce-from-attorney-to-married-couple-picture-image_8717196.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   
   /* All Success Stories Section */
