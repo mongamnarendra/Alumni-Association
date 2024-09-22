@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Alumni Association</div>
+        <nav>
+          <ul>
+            <li><a href="alumini.html" class="links">Home</a></li>
+            <li><a href="directory.html" class="links">Alumni Directory</a></li>
+            <li><a href="jobportal.html" class="links">Job Portal</a></li>
+            <li><a href="event.html" class="links">Events</a></li>
+            <li><a href="stories.html" class="links">Success Stories</a></li>
+            <li><a href="donations.html" class="links">Donations</a></li>
+            <li><a href="about.html" class="links">About Us</a></li>
+            <li><a href="contact.html" class="links">Contact Us</a></li>
+          </ul>
+        </nav>
+        <div class="profil"></div>
+    </header>
+
+     <!-- Profile Section -->
+     <div class="profile-container">
+        <h1>User Profile</h1>
+        <div class="profile-card">
+            <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-picture">
+            <div class="profile-info">
+                <h2 id="name">Narendra Mongam</h2>
+                <p><strong>Email:</strong> <span id="email">narendra@example.com</span></p>
+                <p><strong>Phone Number:</strong> <span id="phone">+91-XXXXXXXXXX</span></p>
+                <p><strong>Graduation Year:</strong> <span id="gradYear">2023</span></p>
+                <p><strong>Field of Study:</strong> <span id="field">Computer Science</span></p>
+                <p><strong>College:</strong> <span id="college">Government Engineering College</span></p>
+                <p><strong>About Me:</strong></p>
+                <p id="aboutMe">Your bio or any additional information can go here. Describe your achievements, interests, and professional journey.</p>
+            </div>
+        </div>
+        <button class="edit-button" onclick="toggleEditForm()">Edit Profile</button>
+
+        <!-- Edit Form -->
+        <div id="editForm" class="hidden">
+            <h2>Edit Profile</h2>
+            <form onsubmit="updateProfile(event)">
+                <label for="editName">Name:</label>
+                <input type="text" id="editName" required>
+                <label for="editEmail">Email:</label>
+                <input type="email" id="editEmail" required>
+                <label for="editPhone">Phone Number:</label>
+                <input type="text" id="editPhone" required>
+                <label for="editGradYear">Graduation Year:</label>
+                <input type="number" id="editGradYear" required>
+                <label for="editField">Field of Study:</label>
+                <input type="text" id="editField" required>
+                <label for="editCollege">College:</label>
+                <input type="text" id="editCollege" required>
+                <label for="editAboutMe">About Me:</label>
+                <textarea id="editAboutMe" required></textarea>
+                <button type="submit">Save Changes</button>
+            </form>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#success-stories">Success Stories</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:info@alumniassociation.com">info@alumniassociation.com</a></p>
+                <p>Phone: +91 9999999999</p>
+                <p>Address: GIET,Rajahmundry</p>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+                <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Alumni Association. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="profile.js"></script>
+</body>
+</html>
