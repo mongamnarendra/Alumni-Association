@@ -51,11 +51,38 @@ nav ul {
 }
 
 nav ul li a {
-    color: white;
-    font-size: 16px;
+  color: white; 
+  font-size: 16px;
+  position: relative;
+  
 }
 
 
+nav ul li a:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 2px;
+  width: 0%;
+  background-color: #FFA500; 
+}
+
+nav ul li a:hover::after {
+  animation: slider 0.5s;
+
+}
+
+@keyframes slider {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+  
+}
 
 
 .profile {
