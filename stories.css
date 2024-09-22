@@ -162,6 +162,9 @@ nav ul li a:hover::after {
     padding: 40px 20px;
     background-color: #1f1f1f;
     text-align: center;
+    display: flex;
+    justify-content: space-around;
+    
   }
   
   .add-story h2 {
@@ -190,6 +193,12 @@ nav ul li a:hover::after {
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
+  }
+
+  .image {
+    width: 400px;
+    height: 400px;
+    
   }
   
   /* All Success Stories Section */
@@ -277,13 +286,17 @@ footer {
 
 .footer-social a {
     margin: 0 10px;
+    background-color: #111;
 }
 
 .footer-social img {
     width: 30px; /* Icon size */
     height: 30px; /* Icon size */
     transition: transform 0.3s;
+    background-color: black;
+
 }
+
 
 .footer-social img:hover {
     transform: scale(1.1); /* Scale effect on hover */
