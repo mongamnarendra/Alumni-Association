@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni-Stories</title>
+    <link rel="stylesheet" href="stories.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Alumni Association</div>
+        <nav>
+          <ul>
+            <li><a href="alumini.html" class="links">Home</a></li>
+            <li><a href="directory.html" class="links">Alumni Directory</a></li>
+            <li><a href="jobportal.html" class="links">Job Portal</a></li>
+            <li><a href="event.html" class="links">Events</a></li>
+            <li><a href="stories.html" class="links">Success Stories</a></li>
+            <li><a href="#" class="links">Donations</a></li>
+            <li><a href="#" class="links">About Us</a></li>
+            <li><a href="#" class="links">Contact Us</a></li>
+          </ul>
+        </nav>
+        <div class="profile"></div>
+      </header>
+      <section class="hero">
+        <h1>Celebrate Alumni Success Stories</h1>
+        <p>Discover inspiring journeys of our alumni and their remarkable achievements.</p>
+      </section>
+    
+      <!-- Success Stories Carousel Section -->
+      <section class="success-carousel">
+        <h2>Featured Success Stories</h2>
+        <div class="carousel">
+          <button id="prev" class="carousel-btn">Previous</button>
+          <div class="slides-container">
+            <div class="slide">
+              <h3>John Doe</h3>
+              <p>John Doe, Class of 2015, is now a CEO of a leading tech company. His journey from university to the top inspires many.</p>
+            </div>
+            <div class="slide">
+              <h3>Jane Smith</h3>
+              <p>Jane, an entrepreneur from the Class of 2010, founded a startup that is transforming the healthcare industry.</p>
+            </div>
+            <div class="slide">
+              <h3>David Brown</h3>
+              <p>David Brown’s career in finance has reached new heights as he leads global projects at a major investment bank.</p>
+            </div>
+          </div>
+          <button id="next" class="carousel-btn">Next</button>
+        </div>
+      </section>
+    
+      <!-- Add Your Story Section -->
+      <section class="add-story">
+        <h2>Share Your Success Story</h2>
+        <form id="addStoryForm">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+    
+          <label for="year">Graduation Year:</label>
+          <input type="number" id="year" name="year" required>
+    
+          <label for="story">Your Success Story:</label>
+          <textarea id="story" name="story" required></textarea>
+    
+          <button type="submit" class="btn">Submit Story</button>
+        </form>
+      </section>
+    
+      <!-- All Success Stories Section -->
+      <section class="all-stories">
+        <h2>All Success Stories</h2>
+        
+        <div class="story-card">
+          <h3>Maria Johnson</h3>
+          <p>Maria Johnson, Class of 2012, became the first woman to lead a major tech innovation company, paving the way for women in STEM.</p>
+        </div>
+    
+        <div class="story-card">
+          <h3>Alex Green</h3>
+          <p>Alex Green, Class of 2005, is now a globally recognized environmental scientist, known for his groundbreaking research on climate change.</p>
+        </div>
+    
+        <div class="story-card">
+          <h3>Sophia Williams</h3>
+          <p>Sophia Williams, Class of 2008, authored multiple best-selling books and is now a well-known motivational speaker.</p>
+        </div>
+      </section>
+      <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#success-stories">Success Stories</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:info@alumniassociation.com">info@alumniassociation.com</a></p>
+                <p>Phone: +91 9999999999</p>
+                <p>Address: GIET,Rajahmundry</p>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+                <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Alumni Association. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
