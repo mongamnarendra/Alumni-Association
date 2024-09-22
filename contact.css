@@ -224,7 +224,7 @@ footer {
 }
 
 .footer-links a:hover {
-    color: #FFA500; /* Change color on hover */
+    color: #FFA500; 
 }
 
 .footer-contact p {
@@ -239,14 +239,9 @@ footer {
     margin: 0 10px;
 }
 
-.footer-social img {
-    width: 30px; /* Icon size */
-    height: 30px; /* Icon size */
-    transition: transform 0.3s;
-}
 
-.footer-social img:hover {
-    transform: scale(1.1); /* Scale effect on hover */
+.footer-social i:hover {
+    transform: scale(1.1); 
 }
 
 .footer-bottom {

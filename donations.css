@@ -145,10 +145,10 @@ nav ul li a:hover::after {
 }
 
 footer {
-    background-color: #222; /* Dark Background */
-    color: white; /* Text Color */
+    background-color: #222; 
+    color: white; 
     padding: 20px 0;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5); /* Shadow for separation */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5); 
 }
 
 .footer-content {
@@ -166,7 +166,7 @@ footer {
 
 .footer-links h3, .footer-contact h3, .footer-social h3 {
     margin-bottom: 15px;
-    color: #FFA500; /* Highlight Color for Headings */
+    color: #FFA500; 
 }
 
 .footer-links ul {
@@ -184,7 +184,7 @@ footer {
 }
 
 .footer-links a:hover {
-    color: #FFA500; /* Change color on hover */
+    color: #FFA500; 
 }
 
 .footer-contact p {
@@ -199,14 +199,9 @@ footer {
     margin: 0 10px;
 }
 
-.footer-social img {
-    width: 30px; /* Icon size */
-    height: 30px; /* Icon size */
-    transition: transform 0.3s;
-}
 
-.footer-social img:hover {
-    transform: scale(1.1); /* Scale effect on hover */
+.footer-social i:hover {
+    transform: scale(1.1); 
 }
 
 .footer-bottom {
